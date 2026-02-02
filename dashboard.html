@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ParkEase | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>ParkEase</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Parking Slots</li>
+      <li>Bookings</li>
+      <li>Users</li>
+      <li>Reports</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content parking-bg">
+
+  <div class="overlay"></div>
+
+  <div class="content">
+
+    <h1>Parking Facilities</h1>
+    <p class="subtitle">Safe & Secure Parking Management with ParkEase</p>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Slots</h3>
+        <p>120</p>
+      </div>
+      <div class="stat-card">
+        <h3>Available</h3>
+        <p>45</p>
+      </div>
+      <div class="stat-card">
+        <h3>Occupied</h3>
+        <p>75</p>
+      </div>
+      <div class="stat-card">
+        <h3>Today Bookings</h3>
+        <p>38</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

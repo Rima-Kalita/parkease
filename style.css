@@ -1,0 +1,216 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #eef2f7;
+  background-image: url(bg.png);
+  color: #333;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  color: #fff;
+  padding: 60px;
+}
+.login-left h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.login-left p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.login-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+}
+.card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #203a43;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+.input-group input:focus {
+  border: 1px solid #2c5364;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #1b3240;
+}
+
+.link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link a {
+  color: #2c5364;
+  text-decoration: none;
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #0b2d3c;
+  color: white;
+  padding: 30px;
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 18px 0;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.sidebar ul li:hover {
+  opacity: 1;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+}
+
+/* HERO (DELHI AIRPORT STYLE) */
+.hero {
+  position: relative;
+  height: 320px;
+  background: url("bg.png") center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(10,30,60,0.85), rgba(10,30,60,))
+}
+/* FULL PARKING BACKGROUND */
+.parking-bg {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(bg.png);
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 35, 49, 0.734);
+}
+
+/* CONTENT ON TOP */
+.content {
+  position: relative;
+  padding: 60px;
+  color: white;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+/* STAT CARDS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.95);
+  color: #0b2d3c;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
